@@ -42,6 +42,7 @@ const puppyApi = api.injectEndpoints({
           transformResponse: (response) => response.data.player,
           transformErrorResponse: (error) => error.data?.error || "Failed to add puppy"
         }),
+        
 
         deletePuppy: build.mutation({
           query: (id) => ({
